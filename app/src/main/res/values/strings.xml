@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Test Project</string>
+    <string name="Deposit">افزایش موجودی</string>
+    <string name="Internet">اینترنت</string>
+    <string name="Withdraw">دریافت از حساب</string>
+    <string name="Transfer">انتفال به کارت</string>
 </resources>
