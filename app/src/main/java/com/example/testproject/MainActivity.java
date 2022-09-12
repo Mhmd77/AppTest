@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             public void onGlobalLayout() {
                 headerLayout.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                 int screenHeight = AndroidUtilities.getScreenHeight(MainActivity.this);
-                int heightSize = headerLayout.getHeight() + AndroidUtilities.dp(16);
+                int heightSize = headerLayout.getHeight() + AndroidUtilities.dp(16) + ((CoordinatorLayout.LayoutParams) headerLayout.getLayoutParams()).topMargin;
                 behavior.setPeekHeight(screenHeight - heightSize);
             }
         });
