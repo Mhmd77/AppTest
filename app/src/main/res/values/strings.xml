@@ -4,4 +4,10 @@
     <string name="Internet">اینترنت</string>
     <string name="Withdraw">دریافت از حساب</string>
     <string name="Transfer">انتفال به کارت</string>
+    <string name="TransactionIcon">Transaction Icon</string>
+    <string name="Balance">موجودی</string>
+    <string name="ManageFinancial">مدیریت مالی</string>
+    <string name="Box">باکس</string>
+    <string name="ChargeAccount">شارژ حساب</string>
+    <string name="Home">خانه</string>
 </resources>

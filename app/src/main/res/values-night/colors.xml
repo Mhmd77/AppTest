@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="price_color">#E7EAEF</color>
+    <color name="description_color">#718E9C</color>
+    <color name="title_color">#E7EAEF</color>
+    <color name="background_bottom_sheet_color">#1B2028</color>
+    <color name="highlight_tint_color">#154641</color>
+    <color name="header_text_color">#E7EAEF</color>
+    <color name="header_icon_tint_color">#E7EAEF</color>
+    <color name="shimmer_color">#B3B3B3</color>
+
+</resources>

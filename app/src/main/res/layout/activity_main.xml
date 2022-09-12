@@ -6,26 +6,123 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ImageView
+        android:id="@+id/headerImageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
         android:src="@drawable/ic_header" />
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/balanceTextView"
+            style="@style/HeaderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="@string/Balance"
+            android:textSize="14sp" />
+
+        <!-- <include
+             layout="@layout/layout_header_items"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginTop="8dp" />-->
+
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/bottom_sheet"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_bottom_sheet_top_rounded"
-        app:behavior_peekHeight="600dp"
         app:layout_behavior="@string/bottom_sheet_behavior">
 
         <View
             android:layout_width="30dp"
             android:layout_height="4dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/bg_peek_view" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transactions_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="36dp"
+            android:overScrollMode="never"
+            android:visibility="gone" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="36dp"
+            android:visibility="visible"
+            app:shimmer_repeat_delay="100"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="linear"
+            app:shimmer_tilt="45">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+
+                <include layout="@layout/shimmer_cell_transaction" />
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
     </FrameLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
