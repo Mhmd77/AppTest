@@ -22,11 +22,14 @@
         <entry key="app/src/main/res/drawable/spaces.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/support.xml" value="0.1" />
         <entry key="app/src/main/res/font/iranyekan.xml" value="0.18425925925925926" />
+        <entry key="app/src/main/res/layout/activity_first.xml" value="0.1423487544483986" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2821044921875" />
         <entry key="app/src/main/res/layout/cell_transaction.xml" value="0.3976265064184217" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2151268115942029" />
         <entry key="app/src/main/res/layout/layout_actionbar.xml" value="0.3140724292699842" />
         <entry key="app/src/main/res/layout/layout_header_items.xml" value="0.3844060262044271" />
         <entry key="app/src/main/res/layout/shimmer_cell_transaction.xml" value="0.3743961352657005" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3411458333333333" />
       </map>
     </option>
   </component>
